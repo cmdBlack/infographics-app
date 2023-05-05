@@ -89,33 +89,35 @@ class MainActivity : AppCompatActivity() {
             binding.btnLightning.visibility = View.VISIBLE
             binding.btnForecast.visibility = View.VISIBLE
             binding.btnDevelopers.visibility = View.VISIBLE
-            binding.editTextPassword.visibility = View.VISIBLE
             binding.tgCalc.visibility = View.VISIBLE
                                                       }, 2500)
 
-        binding.editTextPassword.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable) {
-                if (s.length == 6){
-                    if (s.toString() == "LxC6H/"){
-                        binding.btnAdvisory.isEnabled = true
-                        binding.btnLightning.isEnabled = true
-//                        binding.btnForecast.isEnabled = true
-                        s.clear()
-                        binding.editTextPassword.visibility = View.GONE
-                    }
-                    else{
-                        s.clear()
-                        Toast.makeText(this@MainActivity, "TRY AGAIN", Toast.LENGTH_SHORT).show()
-                    }
+//        binding.editTextPassword.addTextChangedListener(object : TextWatcher {
+//            override fun afterTextChanged(s: Editable) {
+//                if (s.length == 6){
+//                    if (s.toString() == "LxC6H/"){
+//                        binding.btnAdvisory.isEnabled = true
+//                        binding.btnLightning.isEnabled = true
+////                        binding.btnForecast.isEnabled = true
+//                        s.clear()
+//                        binding.editTextPassword.visibility = View.GONE
+//                    }
+//                    else{
+//                        s.clear()
+//                        Toast.makeText(this@MainActivity, "TRY AGAIN", Toast.LENGTH_SHORT).show()
+//                    }
+//
+//                }
+//            }
+//
+//            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+//            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+//
+//            }
+//        })
 
-                }
-            }
-
-            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-
-            }
-        })
+//        binding.btnAdvisory.isEnabled = true
+//        binding.btnLightning.isEnabled = true
 
         binding.btnAdvisory.setOnClickListener {
             val advisoryActivity = Intent(applicationContext, ActivityAdvisory::class.java)
@@ -144,7 +146,6 @@ class MainActivity : AppCompatActivity() {
                 binding.btnLightning.visibility = View.GONE
                 binding.btnForecast.visibility = View.GONE
                 binding.btnDevelopers.visibility = View.GONE
-                binding.editTextPassword.visibility = View.GONE
             }
             else{
                 binding.calcLayout.visibility = View.GONE
@@ -152,7 +153,6 @@ class MainActivity : AppCompatActivity() {
                 binding.btnLightning.visibility = View.VISIBLE
                 binding.btnForecast.visibility = View.VISIBLE
                 binding.btnDevelopers.visibility = View.VISIBLE
-                if (!binding.btnAdvisory.isEnabled) binding.editTextPassword.visibility = View.VISIBLE
             }
         }
 
