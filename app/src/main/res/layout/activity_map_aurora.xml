@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171414"
+    tools:context=".ActivityAurora">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/auroraLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgAuroraMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/nortemap"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07"
+            app:srcCompat="@drawable/auroramapxcv" />
+
+        <ToggleButton
+            android:id="@+id/tgDilasag"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="22dp"
+            android:background="@android:color/transparent"
+            android:text="@string/dilasag"
+            android:textIsSelectable="false"
+            android:textOn="@string/dilasag"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgDilasag"
+            app:layout_constraintEnd_toEndOf="@+id/imgDilasag"
+            app:layout_constraintStart_toStartOf="@+id/imgDilasag"
+            app:layout_constraintTop_toTopOf="@+id/imgDilasag"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+
+        <ToggleButton
+            android:id="@+id/tgCasiguran"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/casiguran"
+            android:textIsSelectable="false"
+            android:textOn="@string/casiguran"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCasiguran"
+            app:layout_constraintEnd_toEndOf="@+id/imgCasiguran"
+            app:layout_constraintStart_toStartOf="@+id/imgCasiguran"
+            app:layout_constraintTop_toTopOf="@+id/imgCasiguran"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgDinalungan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/dinalungan"
+            android:textIsSelectable="false"
+            android:textOn="@string/dinalungan"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgDinalungan"
+            app:layout_constraintEnd_toEndOf="@+id/imgDinalungan"
+            app:layout_constraintStart_toStartOf="@+id/imgDinalungan"
+            app:layout_constraintTop_toTopOf="@+id/imgDinalungan"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgDipaculao"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/dipaculao"
+            android:textIsSelectable="false"
+            android:textOn="@string/dipaculao"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgDipaculao"
+            app:layout_constraintEnd_toEndOf="@+id/imgDipaculao"
+            app:layout_constraintStart_toStartOf="@+id/imgDipaculao"
+            app:layout_constraintTop_toTopOf="@+id/imgDipaculao"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgMariaAurora"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/mariaaurora"
+            android:textIsSelectable="false"
+            android:textOn="@string/mariaaurora"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgMariaAurora"
+            app:layout_constraintEnd_toEndOf="@+id/imgMariaAurora"
+            app:layout_constraintStart_toStartOf="@+id/imgMariaAurora"
+            app:layout_constraintTop_toTopOf="@+id/imgMariaAurora"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgBaler"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/baler"
+            android:textIsSelectable="false"
+            android:textOn="@string/baler"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBaler"
+            app:layout_constraintEnd_toEndOf="@+id/imgBaler"
+            app:layout_constraintStart_toStartOf="@+id/imgBaler"
+            app:layout_constraintTop_toTopOf="@+id/imgBaler"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgSanLuis"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/sanluis"
+            android:textIsSelectable="false"
+            android:textOn="@string/sanluis"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSanLuis"
+            app:layout_constraintEnd_toEndOf="@+id/imgSanLuis"
+            app:layout_constraintStart_toStartOf="@+id/imgSanLuis"
+            app:layout_constraintTop_toTopOf="@+id/imgSanLuis"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgDingalan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/dingalan"
+            android:textIsSelectable="false"
+            android:textOn="@string/dingalan"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgDingalan"
+            app:layout_constraintEnd_toEndOf="@+id/imgDingalan"
+            app:layout_constraintStart_toStartOf="@+id/imgDingalan"
+            app:layout_constraintTop_toTopOf="@+id/imgDingalan"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/imgDilasag"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.142"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgCasiguran"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.246"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgDinalungan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.294"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgDipaculao"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.404"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgMariaAurora"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.200"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.521"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgBaler"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.340"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.544"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgSanLuis"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.246"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.615"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgDingalan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toStartOf="@+id/imgAuroraMap"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            app:layout_constraintVertical_bias="0.805"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <TextView
+            android:id="@+id/tVHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:textColor="#F3EBEB"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgAuroraMap"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/textViewN"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tracking_the_sky_helping_the_country"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAuroraMap"
+            app:layout_constraintEnd_toEndOf="@+id/imgAuroraMap"
+            tools:ignore="SmallSp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ToggleButton
+        android:id="@+id/tgSunRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/sunrain"
+        android:textOn="@string/sunrain"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSunRain"
+        app:layout_constraintEnd_toEndOf="@+id/imgSunRain"
+        app:layout_constraintStart_toStartOf="@+id/imgSunRain"
+        app:layout_constraintTop_toTopOf="@+id/imgSunRain"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgSunRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/rainlightning"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auroraLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sunrain" />
+
+    <ToggleButton
+        android:id="@+id/tgCloudRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:checked="true"
+        android:text="@string/cloudrain"
+        android:textOn="@string/cloudrain"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCloudRain"
+        app:layout_constraintEnd_toEndOf="@+id/imgCloudRain"
+        app:layout_constraintStart_toStartOf="@+id/imgCloudRain"
+        app:layout_constraintTop_toTopOf="@+id/imgCloudRain"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgCloudRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/rainlightning"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        app:layout_constraintBottom_toBottomOf="@+id/tgSunRain"
+        app:layout_constraintStart_toEndOf="@+id/tgSunRain"
+        app:layout_constraintTop_toTopOf="@+id/tgSunRain"
+        app:srcCompat="@drawable/cloudrain" />
+
+    <ToggleButton
+        android:id="@+id/tgCloudLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cloudlightning"
+        android:textOn="@string/cloudlightning"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCloudLightning"
+        app:layout_constraintEnd_toEndOf="@+id/imgCloudLightning"
+        app:layout_constraintStart_toStartOf="@+id/imgCloudLightning"
+        app:layout_constraintTop_toTopOf="@+id/imgCloudLightning"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgCloudLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/rainlightning"
+        app:layout_constraintBottom_toBottomOf="@+id/tgCloudRain"
+        app:layout_constraintStart_toEndOf="@+id/tgCloudRain"
+        app:layout_constraintTop_toTopOf="@+id/tgCloudRain"
+        app:srcCompat="@drawable/cloudlightning" />
+
+    <ToggleButton
+        android:id="@+id/tgRainLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/rainlightning"
+        android:textOn="@string/rainlightning"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRainLightning"
+        app:layout_constraintEnd_toEndOf="@+id/imgRainLightning"
+        app:layout_constraintStart_toStartOf="@+id/imgRainLightning"
+        app:layout_constraintTop_toTopOf="@+id/imgRainLightning"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgRainLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/rainlightning"
+        app:layout_constraintBottom_toBottomOf="@+id/tgCloudLightning"
+        app:layout_constraintStart_toEndOf="@+id/tgCloudLightning"
+        app:layout_constraintTop_toTopOf="@+id/tgCloudLightning"
+        app:srcCompat="@drawable/rainlightning" />
+
+    <ToggleButton
+        android:id="@+id/tgSunCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/suncloud"
+        android:textOn="@string/suncloud"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSunCloud"
+        app:layout_constraintEnd_toEndOf="@+id/imgSunCloud"
+        app:layout_constraintStart_toStartOf="@+id/imgSunCloud"
+        app:layout_constraintTop_toTopOf="@+id/imgSunCloud"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgSunCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/suncloud"
+        app:layout_constraintStart_toStartOf="@+id/tgSunRain"
+        app:layout_constraintTop_toBottomOf="@+id/tgSunRain"
+        app:srcCompat="@drawable/suncloud" />
+
+    <ToggleButton
+        android:id="@+id/tgCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cloud"
+        android:textOn="@string/cloud"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCloud"
+        app:layout_constraintEnd_toEndOf="@+id/imgCloud"
+        app:layout_constraintStart_toStartOf="@+id/imgCloud"
+        app:layout_constraintTop_toTopOf="@+id/imgCloud"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/cloud"
+        app:layout_constraintBottom_toBottomOf="@+id/tgSunCloud"
+        app:layout_constraintStart_toEndOf="@+id/tgSunCloud"
+        app:layout_constraintTop_toTopOf="@+id/tgSunCloud"
+        app:srcCompat="@drawable/cloudy" />
+
+    <Button
+        android:id="@+id/btnSave3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

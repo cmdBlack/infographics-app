@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171414"
+    tools:context=".ActivityKalinga">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kalingaLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgKalinga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/nortemap"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kalingamapxcv" />
+
+        <ToggleButton
+            android:id="@+id/tgBalbalan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="22dp"
+            android:background="@android:color/transparent"
+            android:text="@string/balbalan"
+            android:textIsSelectable="false"
+            android:textOn="@string/balbalan"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBalbalan"
+            app:layout_constraintEnd_toEndOf="@+id/imgBalbalan"
+            app:layout_constraintStart_toStartOf="@+id/imgBalbalan"
+            app:layout_constraintTop_toTopOf="@+id/imgBalbalan"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+
+        <ToggleButton
+            android:id="@+id/tgPasil"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/pasil"
+            android:textIsSelectable="false"
+            android:textOn="@string/pasil"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPasil"
+            app:layout_constraintEnd_toEndOf="@+id/imgPasil"
+            app:layout_constraintStart_toStartOf="@+id/imgPasil"
+            app:layout_constraintTop_toTopOf="@+id/imgPasil"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgLubuagan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/lubuagan"
+            android:textIsSelectable="false"
+            android:textOn="@string/lubuagan"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLubuagan"
+            app:layout_constraintEnd_toEndOf="@+id/imgLubuagan"
+            app:layout_constraintStart_toStartOf="@+id/imgLubuagan"
+            app:layout_constraintTop_toTopOf="@+id/imgLubuagan"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgTinglayan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/tinglayan"
+            android:textIsSelectable="false"
+            android:textOn="@string/tinglayan"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTinglayan"
+            app:layout_constraintEnd_toEndOf="@+id/imgTinglayan"
+            app:layout_constraintStart_toStartOf="@+id/imgTinglayan"
+            app:layout_constraintTop_toTopOf="@+id/imgTinglayan"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgTanudan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/tanudan"
+            android:textIsSelectable="false"
+            android:textOn="@string/tanudan"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTanudan"
+            app:layout_constraintEnd_toEndOf="@+id/imgTanudan"
+            app:layout_constraintStart_toStartOf="@+id/imgTanudan"
+            app:layout_constraintTop_toTopOf="@+id/imgTanudan"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgPinukpuk"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/pinukpuk"
+            android:textIsSelectable="false"
+            android:textOn="@string/pinukpuk"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPinukpuk"
+            app:layout_constraintEnd_toEndOf="@+id/imgPinukpuk"
+            app:layout_constraintStart_toStartOf="@+id/imgPinukpuk"
+            app:layout_constraintTop_toTopOf="@+id/imgPinukpuk"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgRizal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/rizal"
+            android:textIsSelectable="false"
+            android:textOn="@string/rizal"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRizal"
+            app:layout_constraintEnd_toEndOf="@+id/imgRizal"
+            app:layout_constraintStart_toStartOf="@+id/imgRizal"
+            app:layout_constraintTop_toTopOf="@+id/imgRizal"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <ToggleButton
+            android:id="@+id/tgTabukCity"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="@string/tabukcity"
+            android:textIsSelectable="false"
+            android:textOn="@string/tabukcity"
+            android:textSize="0sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTabukCity"
+            app:layout_constraintEnd_toEndOf="@+id/imgTabukCity"
+            app:layout_constraintStart_toStartOf="@+id/imgTabukCity"
+            app:layout_constraintTop_toTopOf="@+id/imgTabukCity"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imgBalbalan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.384"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgPasil"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.278"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.598"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgLubuagan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.246"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.727"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgTinglayan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.824"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgTanudan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.778"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgPinukpuk"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.29"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgRizal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.828"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.430"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <ImageView
+            android:id="@+id/imgTabukCity"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.660"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.566"
+            app:srcCompat="@drawable/cloudrain" />
+
+        <TextView
+            android:id="@+id/tVHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="62dp"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:textColor="#F3EBEB"
+            android:textSize="7sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/textViewN"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:text="@string/tracking_the_sky_helping_the_country"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgKalinga"
+            app:layout_constraintEnd_toEndOf="@+id/imgKalinga"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="@+id/imgKalinga"
+            app:layout_constraintTop_toTopOf="@+id/imgKalinga"
+            app:layout_constraintVertical_bias="0.985"
+            tools:ignore="SmallSp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ToggleButton
+        android:id="@+id/tgSunRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/sunrain"
+        android:textOn="@string/sunrain"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSunRain"
+        app:layout_constraintEnd_toEndOf="@+id/imgSunRain"
+        app:layout_constraintStart_toStartOf="@+id/imgSunRain"
+        app:layout_constraintTop_toTopOf="@+id/imgSunRain"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgSunRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/rainlightning"
+        app:layout_constraintBottom_toBottomOf="@+id/tgCloudRain"
+        app:layout_constraintEnd_toStartOf="@+id/tgCloudRain"
+        app:layout_constraintTop_toTopOf="@+id/tgCloudRain"
+        app:srcCompat="@drawable/sunrain" />
+
+    <ToggleButton
+        android:id="@+id/tgCloudRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:checked="true"
+        android:text="@string/cloudrain"
+        android:textOn="@string/cloudrain"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCloudRain"
+        app:layout_constraintEnd_toEndOf="@+id/imgCloudRain"
+        app:layout_constraintStart_toStartOf="@+id/imgCloudRain"
+        app:layout_constraintTop_toTopOf="@+id/imgCloudRain"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgCloudRain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/rainlightning"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toEndOf="@+id/kalingaLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudrain" />
+
+    <ToggleButton
+        android:id="@+id/tgCloudLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cloudlightning"
+        android:textOn="@string/cloudlightning"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCloudLightning"
+        app:layout_constraintEnd_toEndOf="@+id/imgCloudLightning"
+        app:layout_constraintStart_toStartOf="@+id/imgCloudLightning"
+        app:layout_constraintTop_toTopOf="@+id/imgCloudLightning"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgCloudLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/rainlightning"
+        app:layout_constraintEnd_toEndOf="@+id/tgSunRain"
+        app:layout_constraintStart_toStartOf="@+id/tgSunRain"
+        app:layout_constraintTop_toBottomOf="@+id/tgSunRain"
+        app:srcCompat="@drawable/cloudlightning" />
+
+    <ToggleButton
+        android:id="@+id/tgRainLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/rainlightning"
+        android:textOn="@string/rainlightning"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRainLightning"
+        app:layout_constraintEnd_toEndOf="@+id/imgRainLightning"
+        app:layout_constraintStart_toStartOf="@+id/imgRainLightning"
+        app:layout_constraintTop_toTopOf="@+id/imgRainLightning"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgRainLightning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/rainlightning"
+        app:layout_constraintBottom_toBottomOf="@+id/tgCloudLightning"
+        app:layout_constraintEnd_toEndOf="@+id/tgCloudRain"
+        app:layout_constraintStart_toStartOf="@+id/tgCloudRain"
+        app:layout_constraintTop_toTopOf="@+id/tgCloudLightning"
+        app:srcCompat="@drawable/rainlightning" />
+
+    <ToggleButton
+        android:id="@+id/tgSunCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/suncloud"
+        android:textOn="@string/suncloud"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSunCloud"
+        app:layout_constraintEnd_toEndOf="@+id/imgSunCloud"
+        app:layout_constraintStart_toStartOf="@+id/imgSunCloud"
+        app:layout_constraintTop_toTopOf="@+id/imgSunCloud"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgSunCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/suncloud"
+        app:layout_constraintEnd_toEndOf="@+id/tgCloudLightning"
+        app:layout_constraintStart_toStartOf="@+id/tgCloudLightning"
+        app:layout_constraintTop_toBottomOf="@+id/tgCloudLightning"
+        app:srcCompat="@drawable/suncloud" />
+
+    <ToggleButton
+        android:id="@+id/tgCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cloud"
+        android:textOn="@string/cloud"
+        android:textSize="0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCloud"
+        app:layout_constraintEnd_toEndOf="@+id/imgCloud"
+        app:layout_constraintStart_toStartOf="@+id/imgCloud"
+        app:layout_constraintTop_toTopOf="@+id/imgCloud"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgCloud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/cloud"
+        app:layout_constraintBottom_toBottomOf="@+id/tgSunCloud"
+        app:layout_constraintEnd_toEndOf="@+id/tgRainLightning"
+        app:layout_constraintStart_toStartOf="@+id/tgRainLightning"
+        app:layout_constraintTop_toTopOf="@+id/tgSunCloud"
+        app:srcCompat="@drawable/cloudy" />
+
+    <Button
+        android:id="@+id/btnSave8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kalingaLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

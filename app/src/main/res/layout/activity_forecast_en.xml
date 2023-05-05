@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.5"
+    android:background="#171414"
+    tools:context=".ActivityForecastEN">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/norteLayoutEN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgNorteEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/nortemap"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07"
+            app:srcCompat="@drawable/nortemapxcv" />
+
+        <ImageView
+            android:id="@+id/imgPagudpudEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pagudpud"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.728"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.16"
+            app:srcCompat="@drawable/mostly_sunny"
+            tools:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/imgDumalnegEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/dumalneg"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.69"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.248"
+            app:srcCompat="@drawable/mostly_cloudy" />
+
+
+        <ImageView
+            android:id="@+id/imgAdamsEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/adams"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.273"
+            app:srcCompat="@drawable/mostly_clear_night" />
+
+        <ImageView
+            android:id="@+id/imgBanguiEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/bangui"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.577"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/partly_cloudy" />
+
+        <ImageView
+            android:id="@+id/imgBurgosEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/burgos"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/partly_cloudy_night" />
+
+        <ImageView
+            android:id="@+id/imgPasuquinEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pasuquin"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.401"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.35000002"
+            app:srcCompat="@drawable/chance_rain_night" />
+
+        <ImageView
+            android:id="@+id/imgBacarraEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/bacarra"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.452"
+            app:srcCompat="@drawable/chance_rain" />
+
+
+        <ImageView
+            android:id="@+id/imgLaoagEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/laoag"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.336"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.516"
+            app:srcCompat="@drawable/sunny_en" />
+
+        <ImageView
+            android:id="@+id/imgSanNicolasEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/sannicolas"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.354"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.566"
+            app:srcCompat="@drawable/cloudy_night" />
+
+        <ImageView
+            android:id="@+id/imgSarratEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/sarrat"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.592"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgDingrasEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/dingras"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.520"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.625"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+        <ImageView
+            android:id="@+id/imgMarcosEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/marcos"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.682"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+        <ImageView
+            android:id="@+id/imgNuevaEraEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/nuevaera"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.756"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+        <ImageView
+            android:id="@+id/imgBannaEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/banna"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.73"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgBatacEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/batac"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.336"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.669"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgCurrimaoEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/currimao"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.692"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgPiniliEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/pinili"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.754"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgBadocEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/badoc"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.792"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgPaoayEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/paoay"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.628"
+            app:srcCompat="@drawable/mostly_sunny"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <ImageView
+            android:id="@+id/imgVintarEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/vintar"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.626"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.4"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgCarasiEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/carasi"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.756"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.485"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgPiddigEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/piddig"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.582"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.528"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+
+        <ImageView
+            android:id="@+id/imgSolsonaEN"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/dingras"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            app:layout_constraintHorizontal_bias="0.680"
+            app:layout_constraintStart_toStartOf="@+id/imgNorteEN"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            app:layout_constraintVertical_bias="0.595"
+            app:srcCompat="@drawable/mostly_sunny" />
+
+        <TextView
+            android:id="@+id/tVHeaderEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:textColor="#F3EBEB"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgNorteEN"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/textViewEN"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tracking_the_sky_helping_the_country"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgNorteEN"
+            app:layout_constraintEnd_toEndOf="@+id/imgNorteEN"
+            tools:ignore="SmallSp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btnSaveEN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/save"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputForecast"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fontFamily="monospace"
+                android:gravity="start"
+                android:hint="@string/forecast"
+                android:inputType="textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnGenerate2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnGenerate2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/generate"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputForecast" />
+
+            <Button
+                android:id="@+id/btnClear3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/btnGenerate2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="@+id/btnGenerate2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

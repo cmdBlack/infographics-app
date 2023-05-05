@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/calcLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBgStars"
+            android:layout_width="527dp"
+            android:layout_height="938dp"
+            android:contentDescription="@string/background"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stars"
+            tools:visibility="gone" />
+
+        <EditText
+            android:id="@+id/dryBulb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/dry_bulb"
+            android:importantForAutofill="no"
+            android:inputType="numberSigned|numberDecimal"
+            android:textColor="#ED0B0B"
+            android:textColorHint="#ED0B0B"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgViewC1"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toEndOf="@+id/imgViewDry"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19999999"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <EditText
+            android:id="@+id/wetBulb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:hint="@string/wet_bulb"
+            android:importantForAutofill="no"
+            android:inputType="numberSigned|numberDecimal"
+            android:textColor="#2196F3"
+            android:textColorHint="#2196F3"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/dryBulb"
+            app:layout_constraintStart_toStartOf="@+id/dryBulb"
+            app:layout_constraintTop_toBottomOf="@+id/dryBulb"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/dewPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="@string/dp"
+            android:textColor="#FFAA00"
+            android:textColorHint="#FFAA00"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/wetBulb"
+            app:layout_constraintStart_toStartOf="@+id/wetBulb"
+            app:layout_constraintTop_toBottomOf="@+id/wetBulb" />
+
+        <TextView
+            android:id="@+id/relHumid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="@string/rh"
+            android:textColor="#ED46FF"
+            android:textColorHint="#ED46FF"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/dewPoint"
+            app:layout_constraintStart_toStartOf="@+id/dewPoint"
+            app:layout_constraintTop_toBottomOf="@+id/dewPoint" />
+
+        <TextView
+            android:id="@+id/vapPres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="@string/v_press"
+            android:textColor="#8BC34A"
+            android:textColorHint="#8BC34A"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/relHumid"
+            app:layout_constraintStart_toStartOf="@+id/relHumid"
+            app:layout_constraintTop_toBottomOf="@+id/relHumid" />
+
+        <ImageButton
+            android:id="@+id/buttonCalc"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/calc"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/vapPres"
+            app:srcCompat="@drawable/cal" />
+
+        <ImageButton
+            android:id="@+id/buttonClear"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/clear"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/buttonCalc"
+            app:srcCompat="@drawable/clear" />
+
+        <ImageView
+            android:id="@+id/imgViewC1"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:contentDescription="@string/c1"
+            app:layout_constraintBottom_toBottomOf="@+id/dryBulb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/dryBulb"
+            app:srcCompat="@drawable/celsius" />
+
+        <ImageView
+            android:id="@+id/imgViewC2"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:contentDescription="@string/c2"
+            app:layout_constraintBottom_toBottomOf="@+id/wetBulb"
+            app:layout_constraintStart_toStartOf="@+id/imgViewC1"
+            app:layout_constraintTop_toTopOf="@+id/wetBulb"
+            app:srcCompat="@drawable/celsius" />
+
+        <ImageView
+            android:id="@+id/imgViewC3"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:contentDescription="@string/c3"
+            app:layout_constraintBottom_toBottomOf="@+id/dewPoint"
+            app:layout_constraintEnd_toEndOf="@+id/imgViewC2"
+            app:layout_constraintTop_toTopOf="@+id/dewPoint"
+            app:srcCompat="@drawable/celsius" />
+
+        <ImageView
+            android:id="@+id/imgViewPercent"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:contentDescription="@string/percent"
+            app:layout_constraintBottom_toBottomOf="@+id/relHumid"
+            app:layout_constraintEnd_toEndOf="@+id/imgViewC3"
+            app:layout_constraintTop_toTopOf="@+id/relHumid"
+            app:srcCompat="@drawable/percent" />
+
+        <ImageView
+            android:id="@+id/imgViewDry"
+            android:layout_width="75dp"
+            android:layout_height="39dp"
+            android:contentDescription="@string/dry_bulb"
+            app:layout_constraintBottom_toBottomOf="@+id/dryBulb"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dryBulb"
+            app:srcCompat="@drawable/drybulb" />
+
+        <ImageView
+            android:id="@+id/imgViewWet"
+            android:layout_width="75dp"
+            android:layout_height="39dp"
+            android:contentDescription="@string/wet_bulb"
+            app:layout_constraintBottom_toBottomOf="@+id/wetBulb"
+            app:layout_constraintStart_toStartOf="@+id/imgViewDry"
+            app:layout_constraintTop_toTopOf="@+id/wetBulb"
+            app:srcCompat="@drawable/wetbulb" />
+
+        <ImageView
+            android:id="@+id/imgViewDP"
+            android:layout_width="75dp"
+            android:layout_height="39dp"
+            android:contentDescription="@string/dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dewPoint"
+            app:layout_constraintStart_toStartOf="@+id/imgViewWet"
+            app:layout_constraintTop_toTopOf="@+id/dewPoint"
+            app:srcCompat="@drawable/dpoint" />
+
+        <ImageView
+            android:id="@+id/imgViewRH"
+            android:layout_width="75dp"
+            android:layout_height="39dp"
+            android:contentDescription="@string/rh"
+            app:layout_constraintBottom_toBottomOf="@+id/relHumid"
+            app:layout_constraintStart_toStartOf="@+id/imgViewDP"
+            app:layout_constraintTop_toTopOf="@+id/relHumid"
+            app:srcCompat="@drawable/relh" />
+
+        <ImageView
+            android:id="@+id/imgViewVpress"
+            android:layout_width="75dp"
+            android:layout_height="39dp"
+            android:contentDescription="@string/rh"
+            app:layout_constraintBottom_toBottomOf="@+id/vapPres"
+            app:layout_constraintStart_toStartOf="@+id/imgViewRH"
+            app:layout_constraintTop_toTopOf="@+id/vapPres"
+            app:srcCompat="@drawable/vpressure" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnAdvisory"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/rainfall"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <Button
+        android:id="@+id/btnLightning"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/lightning"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdvisory" />
+
+    <Button
+        android:id="@+id/btnForecast"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/forecast"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLightning" />
+
+    <Button
+        android:id="@+id/btnDevelopers"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/developers"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnForecast" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#EC6464"
+        android:textColorHint="#EC6464"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdvisory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tgCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="24dp"
+        android:textOff="@string/calc"
+        android:textOn="@string/x"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewWelcome2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/welcome"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroundwelcome" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

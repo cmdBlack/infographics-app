@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171414"
+    tools:context=".ActivityAdvisory">
+
+    <Button
+        android:id="@+id/btnAbra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/abra"
+        android:textColor="#000000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/btnApayao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnNorte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/norte"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnSur"
+        app:layout_constraintStart_toStartOf="@+id/btnSur"
+        app:layout_constraintTop_toBottomOf="@+id/btnSur"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnKalinga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/kalinga"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnCagayan"
+        app:layout_constraintStart_toStartOf="@+id/btnCagayan"
+        app:layout_constraintTop_toBottomOf="@+id/btnCagayan"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnMProvince"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/mountain_province"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnIsabela"
+        app:layout_constraintStart_toStartOf="@+id/btnIsabela"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsabela"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnLaUnion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/la_union"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnIfugao"
+        app:layout_constraintStart_toStartOf="@+id/btnIfugao"
+        app:layout_constraintTop_toBottomOf="@+id/btnIfugao"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnPangasinan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/pangasinan"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnQuirino"
+        app:layout_constraintStart_toStartOf="@+id/btnQuirino"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuirino"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnApayao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apayao"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/btnAurora"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAbra"
+        app:layout_constraintTop_toTopOf="@+id/btnAbra"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnQuirino"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/quirino1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnNorte"
+        app:layout_constraintStart_toStartOf="@+id/btnNorte"
+        app:layout_constraintTop_toBottomOf="@+id/btnNorte"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnNVizcaya"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nueva_vizcaya"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnBenguet"
+        app:layout_constraintStart_toStartOf="@+id/btnBenguet"
+        app:layout_constraintTop_toBottomOf="@+id/btnBenguet"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnBenguet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/benguet"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnKalinga"
+        app:layout_constraintStart_toStartOf="@+id/btnKalinga"
+        app:layout_constraintTop_toBottomOf="@+id/btnKalinga"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnIsabela"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/isabela"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnLaUnion"
+        app:layout_constraintStart_toStartOf="@+id/btnLaUnion"
+        app:layout_constraintTop_toBottomOf="@+id/btnLaUnion"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnSur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ilocos_sur"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnAurora"
+        app:layout_constraintStart_toStartOf="@+id/btnAurora"
+        app:layout_constraintTop_toBottomOf="@+id/btnAurora"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnAurora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/aurora1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnApayao"
+        app:layout_constraintTop_toTopOf="@+id/btnApayao"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnIfugao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ifugao"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnApayao"
+        app:layout_constraintStart_toStartOf="@+id/btnApayao"
+        app:layout_constraintTop_toBottomOf="@+id/btnApayao"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnCagayan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cagayan"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btnAbra"
+        app:layout_constraintStart_toStartOf="@+id/btnAbra"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbra"
+        tools:visibility="visible" />
+
+    <ToggleButton
+        android:id="@+id/tgInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="32dp"
+        android:textOff="@string/input"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputAdvisory1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fontFamily="monospace"
+                android:gravity="start"
+                android:hint="@string/advisory"
+                android:inputType="textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnSend1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnSend1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/generate"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputAdvisory1" />
+
+            <Button
+                android:id="@+id/btnClear1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSend1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/btnSend1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

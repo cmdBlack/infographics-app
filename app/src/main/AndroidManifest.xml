@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ActivityForecastEN"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityPangasinan"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityCagayan"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityIfugao"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityKalinga"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityAurora"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitySur"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityIsabela"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityMProvince"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityLaunion"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityBenguet"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityNVizcaya"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityQuirino"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityApayao"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityForecast"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <activity
+            android:name=".ActivityLightning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityDeveloper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityAdvisory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityAbra"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityNorte"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

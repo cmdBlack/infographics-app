@@ -1,0 +1,63 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_advisory.xml" value="0.5" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_developer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_forecast.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_forecast_en.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_forecast_norte.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_lightning.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_map_cagayan.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_map_norte.xml" value="0.5" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/activity_map_sur.xml" value="0.75" />
+        <entry key="..\:/Users/Admin/Documents/KAI/V8/Infgrphcs/app/src/main/res/layout/forecast_norte.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/Documents/KAI/basemaps/Infgrphcs/app/src/main/res/layout/activity_advisory.xml" value="0.67" />
+        <entry key="..\:/Users/Admin/Documents/KAI/basemaps/Infgrphcs/app/src/main/res/layout/activity_map_nvizcaya.xml" value="0.5" />
+        <entry key="..\:/Users/admin/Documents/KAI Files/app/Infgrphcs/Infgrphcs/app/src/main/res/layout/activity_map_abra.xml" value="0.5" />
+        <entry key="..\:/Users/admin/Documents/KAI Files/app/Infgrphcs/Infgrphcs/app/src/main/res/layout/activity_map_norte.xml" value="0.33" />
+        <entry key="..\:/Users/admin/Documents/KAI Files/azx/Infgrphcs/Infgrphcs/app/src/main/res/layout/activity_map_apayao.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/admin/Documents/KAI Files/azx/Infgrphcs/Infgrphcs/app/src/main/res/layout/activity_map_nvizcaya.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_advisory.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_developer.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_forecast.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_lightning.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_map_abra.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_map_apayao.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_map_aurora.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_map_benguet.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_map_cagayan.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_map_ifugao.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_map_isabela.xml" value="0.334716459197787" />
+        <entry key="app/src/main/res/layout/activity_map_kalinga.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_map_launion.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_map_mprovince.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_map_norte.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_map_nvizcaya.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_map_pangasinan.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_map_quirino.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_map_sur.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/adre.xml" value="0.25781792911744267" />
+        <entry key="app/src/main/res/layout/atry.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/atrya.xml" value="0.23660714285714285" />
+        <entry key="app/src/main/res/layout/atryx.xml" value="0.17566287878787878" />
+        <entry key="app/src/main/res/layout/dfdfdfdfdfdf.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/dsdsdsdsds.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/dsdsdsdsdsd.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dssdsdsds.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fsdsd.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/khhjhjhj.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/tyraaa.xml" value="0.3170940170940171" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.10185185185185185" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
