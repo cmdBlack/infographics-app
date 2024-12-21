@@ -365,5 +365,6 @@
     <string name="moderate_to_heavy_rainshowers">MODERATE TO HEAVY RAINSHOWERS</string>
     <string name="lightning_with_moderate_to_heavy_rainshowers">LIGHTNING WITH STRONG WINDS,\nMODERATE TO HEAVY RAINSHOWERS</string>
     <string name="rainfall">rainfall</string>
+    <string name="google_maps_api_key" />
 
 </resources>
